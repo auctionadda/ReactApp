@@ -1,0 +1,59 @@
+.speed-value {
+    font-size: 3em;
+    transition: font-size 0.3s ease-in-out;
+  }
+  
+  .speedometer {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 200px;
+    margin: auto;
+    background-color: #f0f0f0;
+  }
+  .analog-speedometer {
+    text-align: center;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .speedometer-body {
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    border: 10px solid #333;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  
+  .dial {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 100px; /* Adjust size of the dial */
+    background-color: #333;
+  }
+  
+  .needle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 100px; /* Adjust length of the needle */
+    background-color: red; /* Needle color */
+    transform-origin: bottom center; /* Rotate from the bottom center */
+    transition: transform 0.5s ease; /* Smooth transition for needle movement */
+  }
+  
+  .speed-value {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  
